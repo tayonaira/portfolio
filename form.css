@@ -1,0 +1,76 @@
+ #textarea {
+    display: inline-flex;
+    width: 50%;
+    min-height: 100px;
+    max-height: 700px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none; /* prevent manual sizing */
+    overflow-y: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    vertical-align: middle;
+    background: #e8edee;
+    color: #000;
+}
+textarea::placeholder, input::placeholder {
+    font-style: italic;
+    color: #686d6e;
+    font-size: 0.7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.label-input {
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    
+}
+.label-message {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#email {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 44%;
+    height: 22px;
+    margin: 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    background: #e8edee;
+    color: #000;
+}
+#name {
+    width: 45%;
+    height: 25px;
+    align-content: center;
+    margin: 20px;
+    background: #e8edee;
+    color: #000;
+    border-radius: 7px;
+}
+#subject {
+    width: 40%;
+    height: 25px;
+    align-content: center;
+    margin: 20px;
+    background: #e8edee;
+    color: #000;
+    border-radius: 7px;
+}
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
+}
+button:hover {
+    background-color: rgb(5, 5, 59);
+    color: white;
+}
+button:active {
+    background-color: rgb(65, 73, 235);
+}

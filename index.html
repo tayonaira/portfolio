@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta property="og:title" content="Adefowora Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/meta.png">
+    <meta property="og:url" content="https://adefoworaportfolio.com">
+    <meta property="og:description" content="Adefowora portfolio is a my first creation as a selftaught website. The site contains details of my just starting career. I'll do more for sure. Remember the name!!">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:site_name" content="Adefoworah Portfolio">
+    <title> Adefowora Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Macondo+Swash+Caps&diplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/48b9c4ae08.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="hero">
+        <div class="hero__title">ADEFOWORA PORTFOLIO</div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        </div>
+            <span id="menu-btn" onclick="toggleNav()">=</span>
+            <div id="nav-container">
+                <nav class="nav-links">
+                    <a href="#header">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact-me">Contact</a>
+                    <button class="closebtn" 
+                    onclick="closeNav()">&times;</button>
+                </nav>
+            </div>
+            
+    </header>
+     <div id="sticky-cta">
+                <a href="Resume.pdf" target="_blank" class="view-cv">Resume</a>
+            <button class="hire-btn" onclick="openHireModal()">Hire me</button>
+            </div>
+        <!-- Hire Me Modal -->
+         <div id="hireModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Let's Make History Together</h3>
+                    <button class="close-btn" 
+                        onclick="closeHireModal()">&times;</button>
+                </div>
+                <div class="success-msg" id="successMsg"> 
+                    Thank you! I'll be in touch soon.
+                </div>
+                <form onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="e.g., Project inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+         </div>
+
+        <p class="welcome-text">WELCOME TO WHERE THOUGHTS BECOME REALITY! If you believe it, I can make it work!!</p>
+    <main>
+        <section id="about">
+            <section class="section">
+                <article>
+                    <p class="anime">
+                        About Me
+
+                        <span data-text="ABOUT-ME"></span>
+                        <span data-text="ABOUT-ME"></span>
+                    </p>
+                </article>
+            </section>
+                    <p> I am TOHEEB ADETAYO ADESHINA.</p> 
+                    <p>I am a self taught Junior Frontend Web Dev. I design and build websites that don't just look good. They help businesses grow. From attracting new customers to making your brand stand out. </p>
+                    <p>Whether you need a simple landing page or full business website, I focus on user-friendly, design and functionality that actually drives results. Not just code. </p>
+                    <p>You have an idea. I bring it to life. </p>        
+                    <h2>Education</h2>
+                        <div class="edu-section">
+                            <li>B.A in English Language and Linguistics {class of 2024}</li>
+                        </div>
+                    <h2>Certifications</h2>
+                        <div class="certi-section">
+                            <li>Introduction to Web Development, Meta (Coursera) </li>
+                        </div>
+                <!-- Tech Stack Section -->
+        <section class="tech-stack">
+            <h2>My Tech Stacks</h2>
+                <p>The tools I use daily to bring ideas to life.</p>
+            <div class="tech-grid">
+                <div class="tech-card">
+                <div class="tech-icon">◤</div>
+                <div class="tech-name">HTML</div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">CSS</div>
+                <div class="tech-name">Cascading stylesheet</div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">◆</div>
+                <div class="tech-name">Javascript</div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">⚛</div>
+                <div class="tech-name">React</div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">JS</div>
+                <div class="tech-name">Next.js</div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">+</div>
+                <div class="tech-name">More soon....</div>
+            </div>
+        </div>
+    </section>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+                <div class="portfolio-gallery">
+                    <div class="image-card"><img src="/doc/real estate.jpeg" alt="Project 1"></div>
+                    <div class="image-card"><img src="/doc/e-commerce.jpeg" alt="Project 2"></div>
+                    <div class="image-card"><img src="/doc/renewable.jpeg" alt="Project 3"></div>
+                </div>
+                <div class="portfolio-box">
+                    <div class="box-one">
+                        <p>I build websites that works while you sleep. Capturing leads, Building trust, and Driving sales around the clock. </p>
+                    </div>
+                    <div class="box-two"> 
+                        <p>I craft digital presence optimized for search engines. I create websites that put your business on the digital map, designed with SEO and performance in mind. When people look for what you sell they find you first.</p>
+                    </div>
+                    <div class="box-three">
+                        <p>I build websites that position you as the expert so customers feel confident choosing you.</p>
+                    </div>
+                </div>
+        </section>
+        <section id="contact-me">
+            <h2> Contact Me</h2>
+                <p class="impossible-float">"No such thing as Impossible. Your website is your first impression."</p>
+                <strong>Send me a message:</strong>
+                <div>
+                    <form onsubmit="sendEmail(); return false;">
+                    <div>
+                        <label class="label-input">Your Name:</label>
+                        <input id="name" type="text" placeholder="John Doe" required>
+                    </div> 
+                    <div>
+                        <label class="label-input">Subject:</label>
+                        <input id="subject" type="text" placeholder="Contract Inquiry">
+                    </div>
+                    <div>
+                        <label class="label-message">Message:</label>
+                        <textarea id="textarea" placeholder="Tell me about your business." required></textarea>
+                    </div>
+                    <div>
+                        <label class="label-input">Enter your email:</label>
+                        <input id="email" type="email" placeholder="abcde@email.com" required>
+                        <button type="submit">Send</button>
+                    </div>
+                    </form>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="up-btn">
+            <a href="#header">Go up</a>  
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/adeshinaadetayoh?igsh=YzBnOXVrZ2lobnJm"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/tayo__naira?t=IW0Q-6I95YoTfOW-oxtDKg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com/@tayonaira?si=eZEshI5NN1rE55ey"><i class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:adeshinaadetolani@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/toheeb-adeshina-00bb3a283"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/tayonaira"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <copyright class="copyright-text">© 2025 Adefowora Portfolio. All rights reserved.</copyright>
+        <p  class="lang"> powered by HTML x CSS x JS</p>
+    </footer>
+    more updates coming soon.....
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

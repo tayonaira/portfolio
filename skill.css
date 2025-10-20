@@ -1,0 +1,53 @@
+    /* Tech Stack Section */
+    .tech-stack {
+        background-color: #071c39;
+        border-radius: 16px;
+        padding: 32px 24px;
+        margin-bottom: 30px;
+    }
+
+    .tech-stack p {
+        color: #a0a0a0;
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+
+    .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .tech-card {
+        background-color: #18529e;
+        border-radius: 12px;
+        padding: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .tech-card:hover {
+        background-color: #0057c9;
+        transform: translateY(-5px);
+    }
+
+    .tech-icon {
+        font-size: 48px;
+        margin-bottom: 8px;
+    }
+
+    .tech-name {
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Bungee Spice', system-ui, -apple-system, Roboto, 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+    }
+
+    @media (max-width: 600px) {
+        .tech-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
