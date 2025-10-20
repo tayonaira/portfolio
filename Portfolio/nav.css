@@ -1,0 +1,265 @@
+#menu-btn {
+    border-radius: 3px;
+    font-size: 1.5rem;
+    position: fixed;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+    z-index: 1100;
+    transition: opacity 0.5s ease;
+    height: 25px;
+    width: 30px;
+    background-color: #09c1da;
+    color: white;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+#menu-btn:hover {
+    background-color:black;
+    color: white;
+}
+
+#nav-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    align-content: center;
+    background-color:#0c2c58;
+    opacity: 0;
+    z-index: 1100;
+    visibility:hidden;
+    transition: opacity 1s ease, visibility 0.9s ease; 
+}
+#nav-container.active {
+    opacity: 1;
+    visibility: visible;
+}
+.nav-links{
+    height: auto;
+    width: auto;
+    background-color:#0c2c58;
+    text-align: center;
+    margin: 5px 0;
+}
+.nav-links a {
+    color: #09c1da;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 10px;
+    width: 100%;
+    background: #0c2c58;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+    text-align: center;
+}
+.nav-links a:hover {
+    background-color: #0471a6;
+    color: #f5f6fa;
+}
+
+.closebtn {
+    background:none;
+    border: none;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#sticky-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: sticky; top: 50px;
+    background: #0c2c58;
+    gap: 40px;
+    z-index: 1000;
+    animation: growUp 2s forwards;
+}
+@keyframes growUp {
+    from {
+        height: 0;
+        top: 100%;
+    }
+    to {
+        height: 100%;
+        top: 12.5%;
+    }
+}
+#sticky-cta button, #sticky-cta a {
+    top: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #79b7e0;
+    color: #030611;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px #0471a6;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Roboto, system-ui, -apple-system-, BlinkMacSystemFont;
+}
+#sticky-cta button:hover, #sticky-cta a:hover {
+    background: #060b1f;
+    color: #09c1da;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#sticky-cta button:active, #sticky-cta a:active {
+    background: #f8f8fa;
+    color: #060b1f;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeaea;
+    z-index: 1100;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal.active {
+    display: flex;
+}
+.modal-content {
+    background: #f5f5f4;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 85vh;
+    box-shadow: 0 1px 5px;
+    overflow-y: auto;
+    animation: growUp 0.8s;
+}
+@keyframes growUp {
+    from {
+        height: 0;
+        top: 100%;
+    }
+    to {
+        height: 100%;
+        top: 12.5%;
+    }
+}
+.modal-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.modal-header h3 {
+    color: #333;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Oleo Script', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+.close-btn:hover {
+    background: white;
+    color:#333;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    transition: border-color 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #79b7e0;
+}
+.form-group textarea {
+    resize: auto;
+    max-width: 400px;
+    min-height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+}
+.submit-btn {
+    width: 100%;
+    padding: 4px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.submit-btn:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+.success-msg {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 14px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.success-msg.show {
+    display: block;
+}
+@media (max-width: 600px) {
+    .sticky-cta {
+        padding: 30px 20px;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    .sticky-cta {
+        grid-template-columns: 1fr 1fr;
+    }
+    .modal-content {
+        padding: 30px 20px;
+    }
+}

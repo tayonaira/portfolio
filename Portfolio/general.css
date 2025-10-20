@@ -1,0 +1,330 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+padding: 0;
+background:#071c39;
+color: #e1e0f5;
+font-family: 'Poppins', 'Roboto', Georgia, 'Times New Roman';
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.hero {
+background: #071c39;
+position: relative;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+z-index: 1;
+}
+
+.hero__title {
+font-size: 3rem;
+z-index: 2;
+}
+
+.cube {
+position: absolute;
+width: 10px;
+height: 10px;
+background: #00f0ff;
+animation: cube 20s infinite;
+}
+
+.cube:nth-child(2) {
+animation-delay: 2s;
+left: 20vw;
+top: 30vh;
+}
+
+.cube:nth-child(3) {
+animation-delay: 4s;
+left: 65vw;
+top: 75vh;
+}
+
+.cube:nth-child(4) {
+animation-delay: 6s;
+left: 50vw;
+top: 20vh;
+}
+
+.cube:nth-child(5) {
+animation-delay: 8s;
+left: 10vw;
+top: 80vh;
+}
+
+.cube:nth-child(6) {
+animation-delay: 10s;
+left: 35vw;
+top: 20vh;
+}
+
+.cube:nth-child(7) {
+animation-delay: 12s;
+left: 75vw;
+top: 50vh;
+}
+
+@keyframes cube {
+from {
+transform: scale(0) rotate(0deg) translate(-50%, -50%);
+opacity: 1;
+}
+to {
+transform: scale(20) rotate(960deg) translate(-50%, -50%);
+opacity: 0;
+}
+}
+* {
+    transition: all 0.5s ease ease-out;
+}
+
+h1 {
+    font-family: 'Oleo Script', cursive, "Poppins";
+    font-size: 35px;
+    text-align: center;
+    padding: 80px 0;
+    color: white;
+    
+
+}
+
+.welcome-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    font-weight:bold;
+    color: #09c1da;
+    background: linear-gradient(to right);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb (2, 2, 59);
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 2.5s ease-in-out;
+    text-shadow: 1px 1px 2px;
+    margin-bottom: 50px;
+    
+}
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+h2 {
+    font-family: 'Oleo Script', cursive;
+    color: #09c9c9;
+    justify-content: center;
+    border: solid 0.5px;
+    border-radius: 16px;
+    font-size: 28px;
+    margin: 30px;
+}
+/* about subhead design */
+.section {
+    height: 50px;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+article {
+    background: #004e81;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.anime, span {
+    font-family: fantasy, cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.anime {
+    transition: all ease-out .5s;
+    color: transparent;
+    text-shadow: 0 0 0px #004e81;
+    font-size: 4rem;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.anime:before {
+    content: "";
+    width: 50%;
+    position: absolute;
+    border-bottom: solid 8px #fff;
+    left: -50%;
+    top: 50%;
+    transition: transform 0.5s cubic-bezier(1, -0.04, 0, 1.16);
+}
+.anime span {
+    display: block;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+.anime span:first-child:before, .anime span:last-child:before {
+    content: attr(data-text);
+    color: #fff;
+    display: block;
+    transition: ease-out all 0.3s -0.1s;
+}
+.anime span:first-child {
+    top: 0;
+}
+.anime span:last-child {
+    bottom: 0;
+}
+.anime span:first-child:before {
+    transform: translateY(41px);
+}
+.anime span:last-child:before {
+    transform: translateY(-95px);
+}
+.anime:hover {
+    transition: all ease-out 0s;
+    text-shadow: none;
+}
+.anime:hover:before {
+    transform: translateX(42rem);
+}
+.anime:hover span:first-child:before, 
+.anime:hover span:last-child:before {
+    transition:ease-out all 0.3s;
+    transition-delay: .3s;
+}
+.anime:hover span:first-child:before {
+    transform: translateY(0)
+}
+.anime:hover span:last-child:before {
+    transform: translateY(-58px);
+}
+
+
+p, .edu-section, .certi-section {
+    margin: 20px 0;
+    display: inline-block;
+    font-family: 'Times New Roman', Georgia, Times, serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    
+}
+
+.services {
+    display: flex;
+    margin-right: 15px;
+    font-size: 0.9em;
+    font-family: "Oleo Script", cursive;
+    font-weight: bold;
+    font-style: italic;
+    gap: 20px;
+    
+    
+}
+.portfolio-box {
+    display: flex;
+    gap: 10px;
+}
+.box-one, .box-two, .box-three {
+    display: block;
+    border: 3px solid #09c9c9;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 20px 0;
+    max-width: 600px;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+}
+
+.impossible-float {
+    font-family:  'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    font-size: clamp(0.8em, 2.5vw, 1.5rem);  /* keeps text readable on mobile and elegant on desktop */
+    white-space: nowrap; /* Keeps text on a single line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin: 50px 0px;
+    text-shadow: 1px 1px 1px;
+    color: white;
+}
+
+.portfolio-gallery {
+    display: flex;
+    perspective: 1000px;
+    gap: 0;
+    justify-content: center;
+    margin-top: 50px;
+
+    
+}
+.image-card {
+    transform: rotateY(calc(var(--i) * -5deg)) translateX(calc(var(--i) * -20px));
+    z-index: calc(10 - var(--i));
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-card img {
+    width: 200px;
+    display: block;
+    border-radius: 10px;
+}
+/* hover effect */
+.image-card:hover {
+    transform: translateY(-15px) scale(1.2); /* hover zoom */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 3);
+    perspective: 400px;
+}
+.up-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right:10%;
+    transform: translateX(25px);
+    margin-bottom: 100px;
+}
+.up-btn a {
+    text-decoration: none;
+    background: #071c39;
+    color: #09c9c9;
+    font-family: 'Oleo Script', fantasy, 'Franklin Gothic Medium', 'Arial Narrow';
+    padding: 5px;
+    margin-bottom: 50px;
+    border: none; border-radius: 1px;
+}
+.up-btn a:hover {
+background: #004e81;
+    color: #e1e0f5;
+    transform: scale(1.1);
+}
+
+
+/* Smartphone */
+@media (min-width: 320px) and (max-width: 480px) {
+    body { font-size: 0.6rem;}
+}
+/* Tablets */
+@media (min-width: 480px) and (max-width:767px) {
+    body { font-size: 1rem; }
+}
+
+/* Desktops */
+@media (min-width: 767px) {
+    body { font-size: 1rem;}
+}
+ 

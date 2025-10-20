@@ -1,0 +1,30 @@
+footer {
+    margin-top: 20px;
+    padding: 50px;
+    display:block;  
+    gap: 15px; 
+    background-color: #79b7e0;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    height: 20px;
+}  
+
+.copyright-text {
+    font-family:'Poppins', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    
+}
+.lang {
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #348566f1;
+}
