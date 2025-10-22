@@ -149,13 +149,10 @@
                 </div>
                 <div class="portfolio-box">
                     <div class="box-one">
-                        <p>I build websites that works while you sleep. Capturing leads, Building trust, and Driving sales around the clock. </p>
+                        <p>I build websites that works while you sleep. Capturing leads, Building trust, and Driving sales around the clock. Websites that position you as the expert so customers feel confident choosing you. </p>
                     </div>
                     <div class="box-two"> 
                         <p>I craft digital presence optimized for search engines. I create websites that put your business on the digital map, designed with SEO and performance in mind. When people look for what you sell they find you first.</p>
-                    </div>
-                    <div class="box-three">
-                        <p>I build websites that position you as the expert so customers feel confident choosing you.</p>
                     </div>
                 </div>
         </section>
@@ -163,25 +160,26 @@
             <h2> Contact Me</h2>
                 <p class="impossible-float">"No such thing as Impossible. Your website is your first impression."</p>
                 <strong>Send me a message:</strong>
-                <div>
+                <div class="form-container">
                     <form onsubmit="sendEmail(); return false;">
                     <div>
-                        <label class="label-input">Your Name:</label>
+                        <label class="label-input">Email:</label>
+                        <input id="email" type="email" placeholder="abcde@email.com" required>
+                    </div>
+                    <div>
+                        <label class="label-input">Name:</label>
                         <input id="name" type="text" placeholder="John Doe" required>
                     </div> 
                     <div>
                         <label class="label-input">Subject:</label>
                         <input id="subject" type="text" placeholder="Contract Inquiry">
                     </div>
-                    <div>
+                    <div class="textarea-msg">
                         <label class="label-message">Message:</label>
                         <textarea id="textarea" placeholder="Tell me about your business." required></textarea>
                     </div>
-                    <div>
-                        <label class="label-input">Enter your email:</label>
-                        <input id="email" type="email" placeholder="abcde@email.com" required>
-                        <button type="submit">Send</button>
-                    </div>
+                    <button class="submit" type="submit">Send</button>
+                    
                     </form>
                 </div>
         </section>
