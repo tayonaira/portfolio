@@ -1,30 +1,111 @@
+/* FOOTER - RESPONSIVE DESIGN */
 footer {
     margin-top: 20px;
-    padding: 50px;
-    display:block;  
-    gap: 15px; 
+    padding: 30px 15px;
+    display: block;
+    gap: 15px;
     background-color: #79b7e0;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
+    box-sizing: border-box;
+    text-align: center;
 }
+
+/* SOCIAL ICONS */
 .social-icons {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 15px;
     height: 20px;
-}  
-
-.copyright-text {
-    font-family:'Poppins', Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 0.8em;
-    
+    flex-wrap: wrap;
 }
+
+.social-icons a,
+.social-icons img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover,
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* COPYRIGHT TEXT */
+.copyright-text {
+    font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 0.75em;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* LANGUAGE TEXT */
 .lang {
     display: block;
     font-size: 0.7em;
     font-weight: bold;
     color: #348566f1;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE DESIGN - TABLET & DESKTOP */
+
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 40px 30px;
+    }
+
+    .social-icons {
+        gap: 15px;
+        margin-top: 20px;
+        height: 25px;
+    }
+
+    .copyright-text {
+        font-size: 0.8em;
+    }
+
+    .lang {
+        font-size: 0.75em;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+    footer {
+        padding: 50px;
+    }
+
+    .social-icons {
+        gap: 20px;
+        height: 30px;
+    }
+
+    .copyright-text {
+        font-size: 0.85em;
+    }
+
+    .lang {
+        font-size: 0.8em;
+    }
+}
+
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+    footer {
+        padding: 60px;
+    }
+
+    .social-icons {
+        gap: 25px;
+        height: 35px;
+    }
+
+    .copyright-text {
+        font-size: 0.9em;
+    }
 }
