@@ -1,77 +1,139 @@
- #contact-me {
+/* CONTACT SECTION */
+#contact-me {
     display: block;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    margin: 30px;
-    padding: 20px;
+    margin: 20px;
+    padding: 15px;
     border: solid #1875b3;
     background-color: #1875b3;
- }
+}
+
+/* FORM CONTAINER */
 .form-container {
     display: block;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
+    margin: 15px;
+    max-width: 100%;
 }
-.textarea.msg {
-    display: inline-block;
-}
- #textarea {
-    min-height: 100px;
-    max-height: 700px;
-    resize: none; /* prevent manual sizing */
-    overflow-y: hidden;
-    width: 70%;
-    vertical-align: middle;
-}
-textarea::placeholder, input::placeholder {
-    font-style: italic;
-    color: #686d6e;
-    font-size: 0.7rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.label-input {
-    display: inline-block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.8rem;
-    
-}
+
+/* LABELS */
+.label-input,
 .label-message {
     display: inline-block;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 0.8rem;
 }
 
-#email, #subject, #name, #textarea {
+/* INPUT FIELDS & TEXTAREA */
+#email,
+#subject,
+#name,
+#textarea {
     display: inline-block;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     height: 25px;
-    margin: 20px;
-    padding: 5px;
+    margin: 15px 0;
+    padding: 8px;
     font-size: 0.8rem;
-    align-content: center;
-    justify-content: center;
     border-radius: 5px;
     background: #e8edee;
-    color: #000;   
+    color: #000;
+    box-sizing: border-box;
 }
-.submit{
+
+#textarea {
+    min-height: 100px;
+    max-height: 700px;
+    resize: none; /* prevent manual sizing */
+    overflow-y: hidden;
+    vertical-align: middle;
+    height: auto;
+}
+
+.textarea.msg {
+    display: inline-block;
+}
+
+/*  PLACEHOLDER STYLING */
+textarea::placeholder,
+input::placeholder {
+    font-style: italic;
+    color: #686d6e;
+    font-size: 0.7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* BUTTON STYLING */
+.submit {
     display: inline-block;
     background-color: #79b7e0;
     color: black;
     border: none;
     border-radius: 5px;
-    align-content: center;
     font-family: cursive, Georgia, 'Times New Roman', Times, serif;
-    padding: 5px;
-    width: 80%;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-sizing: border-box;
 }
+
 button:hover {
-    background-color:#14cc70;
+    background-color: #14cc70;
     color: white;
 }
+
 button:active {
     background-color: rgb(65, 73, 235);
+}
+
+/* RESPONSIVE DESIGN - TABLET & DESKTOP */
+
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+    #contact-me {
+        margin: 30px;
+        padding: 20px;
+    }
+    .form-container {
+        margin: 20px;
+    }
+    #email,
+    #subject,
+    #name {
+        width: 70%;
+    }
+    #textarea {
+        width: 80%;
+    }
+    .submit {
+        width: 60%;
+    }
+}
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+    #email,
+    #subject,
+    #name {
+        width: 50%;
+    }
+    #textarea {
+        width: 70%;
+    }
+    .submit {
+        width: 50%;
+    }
+}
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+    #contact-me {
+        max-width: 1200px;
+        margin: 30px auto;
+    }
 }
