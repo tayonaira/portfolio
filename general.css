@@ -97,22 +97,21 @@ h2 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Anime Section */
+/* About subhead section */
 .section {
-    min-height: 50px;
-    padding: 2rem 1rem;
+    height: 50px;
+    padding: 2rem;
     box-sizing: border-box;
     position: relative;
 }
-
 article {
     background: #004e81;
-    min-height: 100px;
+    height: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 20px;
 }
 
 .anime {
@@ -171,7 +170,7 @@ article {
 }
 
 .anime:hover:before {
-    transform: translateX(100vw); /* ✅ Use viewport units */
+    transform: translateX(100vw); /* Use viewport units */
 }
 
 .anime:hover span:first-child:before, 
@@ -202,7 +201,7 @@ p, .edu-section, .certi-section {
 /* Services Section */
 .services {
     display: flex;
-    flex-wrap: wrap; /* ✅ Wrap on mobile */
+    flex-wrap: wrap; /* Wrap on mobile */
     justify-content: center;
     margin: 20px auto;
     padding: 0 20px;
@@ -216,7 +215,7 @@ p, .edu-section, .certi-section {
 /* Portfolio Box */
 .portfolio-box {
     display: flex;
-    flex-wrap: wrap; /* ✅ CRITICAL FIX - Allows wrapping */
+    flex-wrap: wrap; /* CRITICAL FIX - Allows wrapping */
     justify-content: center;
     gap: 20px;
     margin: 20px auto;
@@ -227,25 +226,26 @@ p, .edu-section, .certi-section {
 .box-one, .box-two, .box-three {
     display: block;
     border: 3px solid #09c9c9;
+    font-family: cursive, fantasy, system-ui, -apple-system;
     border-radius: 30px;
     padding: 20px;
     margin: 10px;
     width: 100%;
-    max-width: 350px; /* ✅ Limit max width */
+    max-width: 350px; /*  Limit max width */
     background-color: transparent;
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
 
 .box-one:hover, .box-two:hover, .box-three:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
 /* Impossible Float Quote */
 .impossible-float {
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: clamp(0.9rem, 2.5vw, 1.5rem);
-    white-space: normal; /* ✅ Allow wrapping on mobile */
+    white-space: normal; /*  Allow wrapping on mobile */
     text-align: center;
     font-weight: 500;
     margin: 50px 20px;
@@ -257,7 +257,7 @@ p, .edu-section, .certi-section {
 /* Portfolio Gallery */
 .portfolio-gallery {
     display: flex;
-    flex-wrap: wrap; /* ✅ Wrap on mobile */
+    flex-wrap: wrap; /*  Wrap on mobile */
     perspective: 1000px;
     gap: 20px;
     justify-content: center;
@@ -272,25 +272,25 @@ p, .edu-section, .certi-section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    max-width: 100%; /* ✅ Responsive container */
+    max-width: 100%; /*  Responsive container */
 }
 
 .image-card img {
-    width: 100%; /* ✅ Fluid width */
-    max-width: 200px; /* ✅ Max constraint */
-    height: auto; /* ✅ Maintain aspect ratio */
+    width: 100%; /*  Fluid width */
+    max-width: 200px; /*  Max constraint */
+    height: auto; /*  Maintain aspect ratio */
     display: block;
     border-radius: 10px;
 }
 
 .image-card:hover {
-    transform: translateY(-15px) scale(1.1);
+    transform: translateY(-15px) scale(1.3);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Back to Top Button */
 .up-btn {
-    position: fixed; /* ✅ Changed from absolute */
+    position: fixed; /* Changed from absolute */
     right: 20px;
     bottom: 20px;
     z-index: 1000;
@@ -311,15 +311,15 @@ p, .edu-section, .certi-section {
 .up-btn a:hover {
     background: #004e81;
     color: #e1e0f5;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
-/* ========== MEDIA QUERIES ========== */
+/*  MEDIA QUERIES */
 
 /* Mobile Devices */
 @media (max-width: 480px) {
     body { 
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
     
     .portfolio-box {
@@ -355,14 +355,14 @@ p, .edu-section, .certi-section {
     
     .impossible-float {
         white-space: normal;
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
 
 /* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
     body { 
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
     
     .portfolio-box {
@@ -399,3 +399,4 @@ p, .edu-section, .certi-section {
         gap: 25px;
     }
 }
+
